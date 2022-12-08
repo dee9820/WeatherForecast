@@ -1,0 +1,243 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    color: rgb(7, 1, 1);
+    /* background: lightblue; */
+    background: url("background.jpg") no-repeat center center/cover ;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    z-index: -1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    opacity: 0.8;
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+   
+}
+
+.fs-1{
+    text-decoration: none;
+}
+#iconsContainer{
+    display: flex;
+    /* border: 2px solid red; */
+    padding-left: 10px;
+} 
+
+.icons{
+   
+    border: 2px solid red;
+    padding: 14px;
+    margin: 3px 2px;
+    border-radius: 28px;
+    background: rgb(175, 247, 247);
+    width: 50rem;
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.imgClass{
+    height: 140px;
+    width: 100%;
+}
+
+.weather{
+    font-size: 1.5rem;
+    /* margin: 5px; */
+   /*  background-color: rgb(106, 215, 255); */
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.minValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    /* margin-bottom: 5px;
+    margin-left: 5px; */
+
+}
+
+
+.maxValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    /* margin-bottom: 5px;
+    margin-left: 5px; */
+}
+
+.humidity{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    /* margin-bottom: 5px;
+    margin-left: 5px; */
+}
+.Speed{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    /* margin-bottom: 5px;
+    margin-left: 5px; */
+}
+
+#clock {
+    color: aliceblue;
+    font-size: 2rem;
+    width: 25rem;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    
+}
+
+.center{
+    text-align: center;
+    color: aliceblue;
+}
+
+
+
+
+
+/* @media screen and (max-width:1200px){
+    body {
+        background: url("background.jpg") no-repeat center center/cover;
+        background-repeat: no-repeat;
+        background-size: 1200px 1030px;
+    }   
+} */
+@media screen and (max-width: 1200px) {
+    body {
+        background: url("background.jpg") no-repeat center center/cover;
+        background-repeat: no-repeat;
+        background-size: 1200px 1030px;
+    }
+
+    .icons{
+        padding: 20px;
+        margin: 0px 11px;
+        height:27rem;
+        width: 10rem;
+        
+    }
+    .speed{
+        display: flex;
+        margin-top: 20px;
+    }
+    .temp{
+        display: flex;
+    }
+    
+  }
+
+  @media screen and (max-width: 1024px) {
+    .icons{
+        padding: 20px;
+        margin: 0px 4px;
+        margin-bottom: 20px;
+        height: 25rem;
+        width: 10rem;
+    }
+
+    #iconsContainer{
+        display: flex;
+        /* border: 2px solid red; */
+        padding-left: 45px;
+    }
+
+  }
+  
+  @media screen and (max-width: 992px){
+    .fs-1{
+        text-decoration: none;
+    }
+    .navbar{
+        /* height: 2rem; */
+        width: 65rem;
+    }
+
+    #iconsContainer {
+        display: flex;
+        border: 2px solid red;
+        padding-left: 0px;
+        width: 53rem;
+    }
+  }
+
+  @media screen and (max-width: 885px){
+    body {
+        background: url("background.jpg") no-repeat center center/cover;
+        background-repeat: no-repeat;
+        background-size: 110rem  200rem;
+    }
+    
+    .h-primary{
+        margin-left: 18rem;
+    }
+  }
+
+  @media screen and (max-width:430px){
+    .container{
+        width: 65rem;
+    }
+    .h-primary{
+        margin-left: 0rem;
+    }
+    #iconsContainer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 20px;
+        padding: 20px;
+        flex-direction: column;
+        border: 2px solid red;
+        margin-left: 5rem;
+        /* padding-left: 45px; */
+    }
+
+    .icons{
+        width: 100%;
+        /* padding: 20px; */
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .speed{
+        display: flex;
+        margin-left: 20px;
+    }
+    .temp{
+        display: flex;
+        margin-left: 20px;
+    }
+
+  }
